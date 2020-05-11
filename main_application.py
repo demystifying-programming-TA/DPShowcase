@@ -2,7 +2,6 @@ from flask import Flask
 application = Flask(__name__)
 
 
-# bye_world_app.py
 @application.route("/")
-def hello():
-    return "Hello World!"
+def index_view():
+	return redirect("https://demystifying-programming-ta.github.io/DP/#/dpproject/showcase")
