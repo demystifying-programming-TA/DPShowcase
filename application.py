@@ -15,6 +15,7 @@
 
 # Load external dependencies
 # ---------------------------------------------#
+from flask import Flask
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.serving import run_simple
 
@@ -26,7 +27,8 @@ from student1_application import application as student1_app
 
 # Initialize flask app
 # ---------------------------------------------#
-application = DispatcherMiddleware(main_app, {
+application = Flask(__name__)
+application.wsgi_app = DispatcherMiddleware(main_app, {
     '/demo':demo_app,
     '/student1': student1_app,
 })
@@ -35,8 +37,7 @@ application = DispatcherMiddleware(main_app, {
 # ------------------------------------------------------------------------ #
 # Run
 # ------------------------------------------------------------------------ #
-run_simple('localhost', 5000, application, use_reloader=True)
-
+application.run()
 
 # ------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------ #
