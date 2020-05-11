@@ -8,14 +8,14 @@
 
 ## Committing to AWS ELB
 
-** See: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html **
-
-### Initialize (ONLY need to perform once)
-eb init -p python-3.7 dpshowcase2020 --region us-east-2
-eb create flask-env
+** See: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker.html **
 
 ### Update
+git add .
+git commit -m "update"
+git push -u origin master
 eb deploy
 
-### View
-eb open 
+
+## View
+https://demystifying-programming-ta.github.io/DP/#/dpproject/showcase
