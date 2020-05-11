@@ -1,0 +1,1 @@
+web: gunicorn application:application --preload --max-requests 20000 --log-file=-
