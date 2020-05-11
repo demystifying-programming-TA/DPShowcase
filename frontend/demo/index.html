@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+
+<!-- Header -->
+<header>
+
+  <!-- Dependencies -->
+
+  <!-- External-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript"> google.charts.load('current', {packages: ['corechart', 'bar']});</script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Internal -->
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"">
+  <script src="{{ url_for('static', filename='function.js') }}"></script>
+
+
+
+</header>
+
+<!-- Body -->
+<body>
+
+
+    <!-- Overview of the website -->
+    <br> <br> <br>
+
+    <p><h1 align="center">Mobility has decreased across the globe as people shelter in place. <br>The change in the number of Apple Maps direction requests (Jan 13th - April 14th) illustrates this.</h1></p>
+
+    <br> <br> <br>
+    <hr>
+    <br> <br> <br>
+
+    <!-- Button to generate graph & placeholder for location & placeholder for graph -->
+    <div style="text-align:center">
+    
+      <!-- (*Function call to be added in in JS section)  -->
+      <button onclick="InitializeGraph()">See the % decrease in the number of driving and walking direction requests in my current region</button>
+
+      <br><br>
+
+      <div id="location" style="text-align:center"> </div>
+
+      <br><br>
+
+      <div id="chart" style="text-align:center"> </div>
+
+    </div>
+ 
+  
+  <script>
+  
+
+
+</script>
+
+</body>
+</html>

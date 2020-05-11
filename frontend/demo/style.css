@@ -1,0 +1,17 @@
+body {
+  background-color: "lightgrey"; 
+  font-family: "Calibri";
+  font-size: 20px; 
+  text-align: center;
+}
+
+button {
+    font-size: 10px;
+    text-align: center;
+    color: blue;
+    font-weight: 100; 
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
