@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> COVID-19 Webpage</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<script src="{{ url_for('static', filename='function.js') }}"></script>
+
+	<link href = 'https://fonts.googleapis.com/css?family=PT+Sans', rel = 'stylesheet'>
+
+	<script type="text/javascript">
+		console.log("Hello World")
+	</script>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript"> google.charts.load('current', {packages: ['corechart', 'bar']}); </script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+
+	
+
+<body>
+	
+	<br><br><br>
+	<p>
+		<h1>	
+			Lockdown has reduced activity and may have lowered air pollution
+		</h1>
+	</p>
+
+	<br><br>
+	<hr>
+	<br>
+	<div>
+		<button onclick="InitializeGraph()"> <div class = "graph-button">
+			<a href="#" class="button">Update air pollution graph</a> 
+        </button>
+	</div>
+
+	<br>
+
+    <div style = "width:100%">
+
+	  
+		<div id="location" style="text-align:center; width:34%;height:100px; float:left">
+			<br>Your location (dark line):<br><br>
+			N/a
+		</div>
+
+		<div style = "width:33%; height: 100px; float:left">
+			<br> Location 2 (green line) <br><br>
+			<form id = "input1">
+				  <label for="lat">Latitude:</label>
+				  <input type="text" id="lat1" name="lat1" value="42.36" onchange = "updateInputA(this.value)"><br>
+				  <label for="long">Longitude:</label>
+				  <input type="text" id="long1" name="long1" value="-71.094" onchange = "updateInputB(this.value)"><br>
+				  
+			</form>
+		</div>
+
+		<div style = "width:33%; height: 100px; float:left">
+			<br> Location 3 (blue line) <br><br>
+			<form id = "input1">
+				  <label for="lat">Latitude:</label>
+				  <input type="text" id="lat2" name="lat2" value="-37.81" onchange = "updateInputC(this.value)"><br>
+				  <label for="long">Longitude:</label>
+				  <input type="text" id="long2" name="long2" value="144.96" onchange = "updateInputD(this.value)"><br>
+			</form>
+		</div>
+
+		<br style = "clear:left"/>
+	</div>
+
+	<br><br>
+
+	<div id="chart" style="width:100%; height:450px; text-align:center"> 
+		<br><br>
+	</div>
+
+
+	<br><br><br>
+
+
+</body>
+
+
+</html>
+
+
+

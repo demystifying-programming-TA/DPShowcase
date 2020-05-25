@@ -1,0 +1,20 @@
+body {
+  background-color: "lightgrey";
+  font-family: PT Sans;
+  font-size: 22px; 
+}
+
+button {
+	font-size: 22px;
+	text-align: center;
+	color: white;
+	font-weight: 100;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.graph-button:hover{
+	background: orange;
+	color: white;
+	text-align: center;
+}

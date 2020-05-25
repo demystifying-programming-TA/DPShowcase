@@ -1,0 +1,26 @@
+body{
+	background-color: white;
+	font-family: PT Sans;
+ 	font-size: 14px; 
+  	text-align: center;
+}
+
+button {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+    color: white; 
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background: #5333ed;
+    border-style: none;
+}
+
+button:hover{
+    background: #34495e;
+}
+
+a.button{
+    text-decoration: none;
+    color: white;
+}

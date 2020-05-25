@@ -1,0 +1,19 @@
+# Data
+pandas
+numpy
+
+# Plotting
+matplotlib
+
+# Modelling
+scikit-learn
+
+# Web Development
+flask
+
+# Interactive Coding
+jupyter
+
+# Domain-Specific Packages
+## Geocoding
+geopy

@@ -1,0 +1,59 @@
+
+	
+
+<html>
+<!doctype html>
+
+
+
+<!-- Header -->
+<head>
+
+<link rel=stylesheet type="text/css" src="{{ url_for('static', filename='css_file.css') }}">
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript"> google.charts.load('current', {packages: ['corechart', 'bar']});</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js_file.js') }}"></script>
+
+
+  <title>
+	<!-- Pick a title for your website! -->
+  </title>
+
+</head>
+
+<!-- Body -->
+<body>
+
+	<!-- Provide an overview of the website -->
+	<br> <br> <br>
+
+	<p><h1>How many people have died in my local area due to COVID-19?</h1></p>
+
+	<br> <br> <br>
+	<hr>
+	<br> <br> <br>
+
+	<!-- Let's insert a button to generate graph & placeholder for location & placeholder for graph -->
+	<div>
+
+	  <button onclick='InitializeGraph()'>See the number of infections and deaths in my area</button>
+
+
+	</div>
+	<div id='location' style='text-align:center'> </div>  
+	<br><br>  
+	<div id='chart' style='text-align:center'> </div> 
+
+
+</body>
+</html>
+
+<!doctype html>
+
+<html>
+
+
+
+

@@ -1,0 +1,65 @@
+
+<!doctype html>
+
+<html>
+
+<header>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript"> google.charts.load('current', {packages: ['corechart', 'bar']});</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<script src="{{ url_for('static', filename='function.js') }}"></script>
+
+	<title>
+		COVID Stats
+	</title>
+
+	
+
+</header>
+
+<!-- Body -->
+<body>
+
+
+	<!-- Provide an overview of the website -->
+	<br> <br> <br>
+
+	<p><h1 align="center">Mobility has decreased across the globe as people shelter in place. <br>The change in the number of Apple Maps direction requests (Jan 13th - April 14th) illustrates this.</h1></p>
+
+	<br> <br> <br>	
+	<hr>
+	<br> <br> <br>
+
+	<!-- Let's insert a button to generate graph & placehold for location & placeholder for graph -->
+		<div style="text-align:center">
+
+			<button onclick="InitializeGraph()">
+			<div class = "graph-button"> <a href="#" class="button">
+			See the % decrease in the number of driving and walking direction requests in my current region</button>
+
+			<div id="location" style="text-align:center"> </div>
+
+			<br><br>
+
+			<div id="chart" style="text-align:center"> </div>
+
+			<br> <br> <br>
+
+			<a href="https://www.cdc.gov/">
+				For more info on COVID follow this link to the CDC website
+			</a>
+
+			<br> <br> <br>
+			
+			<img src="{{ url_for('static', filename='website_image.png') }}" alt ="Coronavirus Image" height="400" width="600">	
+
+		</div>
+	
+
+	</body>
+	</html>
+	
+
