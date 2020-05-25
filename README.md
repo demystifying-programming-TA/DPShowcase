@@ -10,14 +10,13 @@
 
 ## Committing to AWS ELB
 
-** See: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker.html **
-
-### Update
+### Update Repo
 git add .
 git commit -m "update"
 git push -u origin master
-eb deploy
 
+### Deploy
+eb deploy
 
 ## View
 https://demystifying-programming-ta.github.io/DP/#/dpproject/showcase
